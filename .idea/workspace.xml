@@ -5,10 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5d1f6443-e202-4838-97e9-3b2d783638c6" name="Changes" comment="quick sort, selection sort , merge sort e inserction sort">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/uniscPythonProjectShellSort.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/uniscPythonProjectShellSort.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sort/Sort.py" beforeDir="false" afterPath="$PROJECT_DIR$/Sort/Sort.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
