@@ -1,6 +1,8 @@
 import numpy as np
 
-
+""""
+Bubble Sort: troca elementos adjacentes até que a lista esteja ordenada.
+"""
 def bubble_sort(vetor):
     n = len(vetor)
     comparacoes, num_troca = 0, 0
@@ -16,7 +18,9 @@ def bubble_sort(vetor):
         n -= 1
     return vetor, comparacoes, num_troca
 
-
+""""
+ Insertion Sort: percorre um vetor da esquerda para a direita, ordenando os elementos à esquerda à medida que avança.
+"""
 def insertion_sort(vetor):
     n = len(vetor)
     comparacoes, num_troca = 0, 0
@@ -31,7 +35,9 @@ def insertion_sort(vetor):
         vetor[position] = currentValue
     return vetor, comparacoes, num_troca
 
-
+""""
+Quick Sort:  divide a lista em torno de um elemento pivô e ordena recursivamente as sublistas resultantes
+"""
 def quick_sort(vetor):
     global comparacoes, num_troca
     comparacoes, num_troca = 0, 0
@@ -82,7 +88,9 @@ def partition(vetor, first, last):
 
     return direita
 
-
+""""
+Merge Sort: divide a lista em metades, ordena cada metade e depois mescla as metades ordenadas.
+"""
 def merge_sort(vetor):
     global comparacoes, num_troca
     num_troca, comparacoes = 0, 0
@@ -125,7 +133,10 @@ def merge(esquerda, direita):
 
     return np.array(resultado)
 
-
+""""
+Shell Sort: divide a lista em subgrupos menores e os ordena independentemente, reduzindo gradualmente a lacuna entre os 
+elementos comparados.
+"""
 def shell_sort(vetor):
     global comparacoes, num_troca
     h = len(vetor) // 2
@@ -155,7 +166,10 @@ def gapInsertionSort(vetor, start, h):
 
         vetor[position] = currentvalue
 
-
+"""
+Selection sort: passar sempre o menor valor do vetor para a primeira posição, depois o segundo menor valor para a 
+segunda posição e assim sucessivamente.
+"""
 def selection_sort(vetor):
     n = len(vetor)
     comparacoes, num_troca = 0, 0
@@ -173,12 +187,19 @@ def selection_sort(vetor):
 
     return vetor, comparacoes, num_troca
 
-
+"""
+Radix Sort: ordena os elementos processando seus dígitos individuais, em vez de comparar diretamente os valores 
+dos elementos.
+"""
 def radix_sort(vetor):
     comparacoes, trocas = 0, 0
     return vetor, comparacoes, trocas
 
+""""
 
+Bucket Sort: divide a lista em compartimentos, distribui os elementos em cada compartimento com base em seu valor e, 
+em seguida, ordena cada compartimento antes de combiná-los para obter a lista ordenada.
+"""
 def bucket_sort(vetor):
     comparacoes, trocas = 0, 0
     return vetor, comparacoes, trocas
